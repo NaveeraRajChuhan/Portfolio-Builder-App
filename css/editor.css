@@ -1,0 +1,89 @@
+body{
+margin:0;
+font-family:Arial;
+background:#020617;
+color:white;
+}
+
+.editor-container{
+display:flex;
+min-height:100vh;
+}
+
+.editor-sidebar{
+width:320px;
+background:#111827;
+padding:30px;
+}
+
+.preview-area{
+flex:1;
+padding:40px;
+overflow:auto;
+}
+
+.portfolio-preview{
+background:#0f172a;
+padding:40px;
+border-radius:20px;
+min-height:90vh;
+box-shadow:0 0 40px rgba(168,85,247,0.2);
+}
+
+.hero-preview{
+text-align:center;
+padding:50px 0;
+}
+
+.hero-preview h1{
+font-size:60px;
+color:#a855f7;
+}
+
+.skills-section{
+margin-top:40px;
+}
+
+.skills-section ul{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+padding:0;
+list-style:none;
+}
+
+.skills-section li{
+background:#a855f7;
+padding:10px 20px;
+border-radius:30px;
+}
+
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:20px;
+margin-top:20px;
+}
+
+.draggable{
+cursor:move;
+}
+
+.light-theme{
+background:white !important;
+color:black !important;
+}
+
+@media(max-width:768px){
+.editor-container{
+flex-direction:column;
+}
+
+.editor-sidebar{
+width:100%;
+}
+
+.hero-preview h1{
+font-size:40px;
+}
+}
